@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <title>Ciclistas</title>
+</head>
+<body>
+  <h1>Trabajo Spring Web</h1>
+
+  <form id="formulario-nuevo">
+    <h2>Agregar Nuevo Ciclista</h2>
+    <input type="text" id="nuevoId" placeholder="ID" required>
+    <input type="text" id="nuevoNombre" placeholder="Nombre" required>
+    <input type="text" id="nuevoApellido" placeholder="Apellido" required>
+    <input type="number" id="nuevaEdad" placeholder="Edad" required>
+    <input type="text" id="nuevoEquipo" placeholder="Equipo" required>
+    <input type="submit" value="Agregar Ciclista">
+  </form>
+
+  <form id="formulario-buscar">
+    <h2>Buscar Ciclista por ID</h2>
+    <input type="text" id="buscarId" placeholder="ID" required>
+    <input type="submit" value="Buscar Ciclista">
+  </form>
+  <form id="formulario-actualizar">
+    <h2>Actualizar Ciclista por ID</h2>
+    <input type="text" id="actualizarId" placeholder="ID" required>
+    <input type="text" id="actualizarNombre" placeholder="Nombre" required>
+    <input type="text" id="actualizarApellido" placeholder="Apellido" required>
+    <input type="number" id="actualizarEdad" placeholder="Edad" required>
+    <input type="text" id="actualizarEquipo" placeholder="Equipo" required>
+    <input type="submit" value="Actualizar Ciclista">
+  </form>
+
+  <form id="formulario-borrar">
+    <h2>Borrar Ciclista por ID</h2>
+    <input type="text" id="borrarId" placeholder="ID" required>
+    <input type="submit" value="Borrar Ciclista">
+  </form>
+
+
+
+  <table id="tabla-ciclistas">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Edad</th>
+        <th>Equipo</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-cuerpo"></tbody>
+  </table>
+
+  <script type="text/javascript" src="js/app.js"></script>
+</body>  
+
+</html>
